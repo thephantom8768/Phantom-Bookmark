@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Overcomplicated bookmark manager",
+    "version": "1.0",
+    "description": "Cause i wanted my own bookmark manager for my 10k+ tabs",
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "topSites",
+        "tabs"
+    ],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+B"
+            },
+            "description": "Open bookmark manager"
+        }
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    }
+}
